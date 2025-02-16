@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo general */
+body {
+    background-color: #f4f4f4;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #0073e6;
+    padding: 15px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    background-color: #ffffff33; /* Equivalente a rgba(255, 255, 255, 0.2) */
+    border-radius: 5px;
+}
+
+/* Contenedor */
+/* Contenedor ocupa toda la pantalla con márgenes */
+.contenedor {
+    flex: 1;
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    min-height: calc(100vh - 100px); /* Resta el espacio del header y footer para que ocupe el resto de la pantalla */
+}
+
+/* Estilo para cada evento */
+.evento {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001a;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 15px;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px #00000033;
+}
+
+.evento a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+.evento h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0073e6;
+}
+
+.evento p {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #777777;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001a;
+    margin: 20px 0;
+}
+
+.evento-detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Información del evento */
+.info {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+/* Estilos para los textos */
+.info h2 {
+    color: #0073e6;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.info b {
+    color: #333333;
+}
+
+/* Sección de reserva */
+.reserver {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001a;
+    max-width: 400px;
+}
+
+/* Estilos del formulario */
+.reserver h3 {
+    font-size: 20px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.reserver form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserver label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.reserver input[type="text"],
+.reserver input[type="email"] {
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.reserver input[type="submit"] {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reserver input[type="submit"]:hover {
+    background: #005bb5;
+}
+.error {
+    color: red;
+}
