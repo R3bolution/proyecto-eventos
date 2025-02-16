@@ -15,7 +15,7 @@ include '../views/header.php';
         echo '<h3>'.$value['name'].'</h3>';
         echo '<p>'.$value['description'].'</p>';
         echo '<p>'.$date.'</p>';
-        echo '<p>'.$value['ticket_price'].'</p>';
+        echo '<p>'.$value['ticket_price'].'€</p>';
         echo "</a>";
         echo '</div>';
     }
